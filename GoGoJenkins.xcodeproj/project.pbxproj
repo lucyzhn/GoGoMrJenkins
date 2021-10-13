@@ -15,9 +15,9 @@
 		82B0E123271645C400B07CDE /* StatusImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0E122271645C400B07CDE /* StatusImageView.swift */; };
 		82B0E19527174CCD00B07CDE /* IconImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0E19427174CCD00B07CDE /* IconImageView.swift */; };
 		82B0E19A27174DE000B07CDE /* JenkinsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E19927174DE000B07CDE /* JenkinsIcon@2x.png */; };
-		82B0E19E27174FF000B07CDE /* Pickaxe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E19D27174FF000B07CDE /* Pickaxe@2x.png */; };
-		82B0E1A227175D1300B07CDE /* Checkmark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E1A127175D1300B07CDE /* Checkmark@2x.png */; };
 		82B0E1A527175F3A00B07CDE /* FailedJenkins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E1A427175F3A00B07CDE /* FailedJenkins@2x.png */; };
+		82B0E1A82717631600B07CDE /* BuildJenkins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E1A72717631600B07CDE /* BuildJenkins@2x.png */; };
+		82B0E1AB2717633900B07CDE /* SuccessJenkins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E1AA2717633900B07CDE /* SuccessJenkins@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +32,9 @@
 		82B0E122271645C400B07CDE /* StatusImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusImageView.swift; sourceTree = "<group>"; };
 		82B0E19427174CCD00B07CDE /* IconImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImageView.swift; sourceTree = "<group>"; };
 		82B0E19927174DE000B07CDE /* JenkinsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JenkinsIcon@2x.png"; sourceTree = "<group>"; };
-		82B0E19D27174FF000B07CDE /* Pickaxe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pickaxe@2x.png"; sourceTree = "<group>"; };
-		82B0E1A127175D1300B07CDE /* Checkmark@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Checkmark@2x.png"; sourceTree = "<group>"; };
 		82B0E1A427175F3A00B07CDE /* FailedJenkins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FailedJenkins@2x.png"; sourceTree = "<group>"; };
+		82B0E1A72717631600B07CDE /* BuildJenkins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "BuildJenkins@2x.png"; path = "../../../Downloads/BuildJenkins@2x.png"; sourceTree = "<group>"; };
+		82B0E1AA2717633900B07CDE /* SuccessJenkins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SuccessJenkins@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,8 +76,8 @@
 				82B0E19927174DE000B07CDE /* JenkinsIcon@2x.png */,
 				82B0E11127161CDD00B07CDE /* GoGoJenkins.entitlements */,
 				82B0E11827161E0D00B07CDE /* WindowController.swift */,
-				82B0E1A127175D1300B07CDE /* Checkmark@2x.png */,
-				82B0E19D27174FF000B07CDE /* Pickaxe@2x.png */,
+				82B0E1A72717631600B07CDE /* BuildJenkins@2x.png */,
+				82B0E1AA2717633900B07CDE /* SuccessJenkins@2x.png */,
 				82B0E122271645C400B07CDE /* StatusImageView.swift */,
 				82B0E19427174CCD00B07CDE /* IconImageView.swift */,
 			);
@@ -142,11 +142,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				82B0E1A527175F3A00B07CDE /* FailedJenkins@2x.png in Resources */,
-				82B0E19E27174FF000B07CDE /* Pickaxe@2x.png in Resources */,
 				82B0E10C27161CDD00B07CDE /* Assets.xcassets in Resources */,
+				82B0E1A82717631600B07CDE /* BuildJenkins@2x.png in Resources */,
 				82B0E10F27161CDD00B07CDE /* Main.storyboard in Resources */,
+				82B0E1AB2717633900B07CDE /* SuccessJenkins@2x.png in Resources */,
 				82B0E19A27174DE000B07CDE /* JenkinsIcon@2x.png in Resources */,
-				82B0E1A227175D1300B07CDE /* Checkmark@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

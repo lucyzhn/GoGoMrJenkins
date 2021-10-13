@@ -13,10 +13,10 @@ class StatusImageView: NSImageView {
         super.draw(dirtyRect)
         
         // PENDING
-//        self.image = NSImage(named: "Pickaxe@2x.png)
+//        self.image = NSImage(named: "BuildJenkins@2x.png)
         
         // SUCCESS
-//        self.image = NSImage(named: "Checkmark@2x.png")
+//        self.image = NSImage(named: "SuccessJenkins@2x.png")
         
         // FAIL
 //        self.image = NSImage(named: "FailedJenkins@2x.png")
