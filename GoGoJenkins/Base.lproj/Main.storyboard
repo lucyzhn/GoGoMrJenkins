@@ -727,7 +727,7 @@
                                                 </textFieldCell>
                                             </textField>
                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kV9-MY-w0y" userLabel="Status Icon">
-                                                <rect key="frame" x="391" y="-8" width="48" height="48"/>
+                                                <rect key="frame" x="391" y="0.0" width="48" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="0DM-2p-rzA"/>
                                                 <connections>
