@@ -703,15 +703,36 @@
                                     <view key="view" translatesAutoresizingMaskIntoConstraints="NO" id="dbB-7q-oLB">
                                         <rect key="frame" x="0.0" y="0.0" width="685" height="30"/>
                                         <subviews>
-                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M3n-2F-mly" customClass="IconImageView" customModule="GoGoJenkins" customModuleProvider="target">
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M3n-2F-mly">
                                                 <rect key="frame" x="0.0" y="-9" width="48" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="jC4-tr-Wnk"/>
                                             </imageView>
-                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kV9-MY-w0y" customClass="StatusImageView" customModule="GoGoJenkins" customModuleProvider="target">
-                                                <rect key="frame" x="318" y="-9" width="48" height="48"/>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="db0-G2-7K2">
+                                                <rect key="frame" x="57" y="-1" width="210" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" refusesFirstResponder="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="fzI-tH-gtS">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0it-Ak-jRH">
+                                                <rect key="frame" x="282" y="-1" width="90" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" borderStyle="bezel" alignment="center" drawsBackground="YES" id="Saf-2b-cj7">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kV9-MY-w0y" userLabel="Status Icon">
+                                                <rect key="frame" x="391" y="-8" width="48" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="0DM-2p-rzA"/>
+                                                <connections>
+                                                    <action selector="iamge:" target="B8D-0N-5wS" id="KkK-85-RJn"/>
+                                                </connections>
                                             </imageView>
                                         </subviews>
                                     </view>
@@ -720,6 +741,16 @@
                         </touchBarItems>
                     </touchBar>
                     <connections>
+                        <outlet property="StatusImage" destination="kV9-MY-w0y" id="9Jg-nL-Ti2"/>
+                        <outlet property="icon" destination="jC4-tr-Wnk" id="Qv4-Sw-6Jv"/>
+                        <outlet property="image" destination="kV9-MY-w0y" id="fNh-J8-J5n"/>
+                        <outlet property="img" destination="kV9-MY-w0y" id="jg1-qA-vOa"/>
+                        <outlet property="mainIcon" destination="M3n-2F-mly" id="2PC-XK-dHi"/>
+                        <outlet property="prNumber" destination="0it-Ak-jRH" id="s7n-SF-IsC"/>
+                        <outlet property="serviceName" destination="db0-G2-7K2" id="4Ci-YL-XTb"/>
+                        <outlet property="statusIcon" destination="kV9-MY-w0y" id="IIg-iB-jpc"/>
+                        <outlet property="statusImage" destination="0DM-2p-rzA" id="joZ-I3-N4k"/>
+                        <outlet property="touchBar" destination="H2X-1j-clE" id="jjI-MC-Nmn"/>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>
                     </connections>
                 </windowController>
@@ -734,6 +765,19 @@
                     <view key="view" id="m2S-Jp-Qdl">
                         <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <subviews>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NYU-FS-hi0">
+                                <rect key="frame" x="203" y="118" width="75" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="push" title="Start" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="q8T-33-Dku">
+                                    <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                    <connections>
+                                        <action selector="start:" target="XfG-lQ-9wD" id="sNr-I3-vll"/>
+                                    </connections>
+                                </buttonCell>
+                            </button>
+                        </subviews>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>

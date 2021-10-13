@@ -9,16 +9,30 @@ import Cocoa
 
 class WindowController: NSWindowController {
 
+    @IBOutlet weak var mainIcon: NSImageView!
+    @IBOutlet weak var serviceName: NSTextField!
+    @IBOutlet weak var prNumber: NSTextField!
+    @IBOutlet weak var statusIcon: NSImageView!
+    
     override func windowDidLoad() {
         super.windowDidLoad()
     
-        // Implement this method to handle any initialization after your window controller's window has been loaded from its nib file.
+        mainIcon.image = NSImage(named: "JenkinsIcon@2x.png")
     }
     
-    @IBAction func buttonTapped(_ sender: Any) {
-        print("Hello World")
+    func updateStatus(pRBuild: PRInstance) {
+        serviceName.font = .systemFont(ofSize: 22)
+        prNumber.font = .systemFont(ofSize: 22)
+        serviceName.stringValue = pRBuild.serviceName
+        prNumber.stringValue = "PR#" + pRBuild.prNumber
+        if (pRBuild.status == "PENDING") {
+            statusIcon.image = NSImage(named: "BuildJenkins@2x.png")
+        }
+        else if (pRBuild.status == "SUCCESS") {
+            statusIcon.image = NSImage(named: "SuccessJenkins@2x.png")
+        }
+        else if (pRBuild.status == "FAILED") {
+            statusIcon.image = NSImage(named: "FailedJenkins@2x.png")
+        }
     }
-    
-    
-    
 }

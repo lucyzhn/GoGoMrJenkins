@@ -21,6 +21,12 @@ class ViewController: NSViewController {
         }
     }
 
-
+    @IBAction func start(_ sender: Any) {
+        
+        let wc : WindowController = self.view.window?.windowController as! WindowController
+        let pr = PRInstance(serviceName: "reservations-service", prNumber: "202", status: "SUCCESS", buildURL: "www.jenkins.com")
+        wc.updateStatus(pRBuild: pr)
+    }
+    
 }
 
