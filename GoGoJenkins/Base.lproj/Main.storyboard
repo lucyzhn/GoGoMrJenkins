@@ -709,7 +709,7 @@
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="jC4-tr-Wnk"/>
                                             </imageView>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="db0-G2-7K2">
-                                                <rect key="frame" x="57" y="-1" width="210" height="34"/>
+                                                <rect key="frame" x="57" y="-1" width="140" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <textFieldCell key="cell" refusesFirstResponder="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="fzI-tH-gtS">
                                                     <font key="font" metaFont="system"/>
@@ -717,17 +717,8 @@
                                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                 </textFieldCell>
                                             </textField>
-                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0it-Ak-jRH">
-                                                <rect key="frame" x="282" y="-1" width="90" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                                <textFieldCell key="cell" borderStyle="bezel" alignment="center" drawsBackground="YES" id="Saf-2b-cj7">
-                                                    <font key="font" metaFont="system"/>
-                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                </textFieldCell>
-                                            </textField>
                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kV9-MY-w0y" userLabel="Status Icon">
-                                                <rect key="frame" x="391" y="0.0" width="48" height="30"/>
+                                                <rect key="frame" x="193" y="0.0" width="48" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="0DM-2p-rzA"/>
                                                 <connections>
@@ -746,7 +737,7 @@
                         <outlet property="image" destination="kV9-MY-w0y" id="fNh-J8-J5n"/>
                         <outlet property="img" destination="kV9-MY-w0y" id="jg1-qA-vOa"/>
                         <outlet property="mainIcon" destination="M3n-2F-mly" id="2PC-XK-dHi"/>
-                        <outlet property="prNumber" destination="0it-Ak-jRH" id="s7n-SF-IsC"/>
+                        <outlet property="prInfo" destination="db0-G2-7K2" id="DgS-tm-BtR"/>
                         <outlet property="serviceName" destination="db0-G2-7K2" id="4Ci-YL-XTb"/>
                         <outlet property="statusIcon" destination="kV9-MY-w0y" id="IIg-iB-jpc"/>
                         <outlet property="statusImage" destination="0DM-2p-rzA" id="joZ-I3-N4k"/>

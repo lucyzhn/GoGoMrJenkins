@@ -10,8 +10,7 @@ import Cocoa
 class WindowController: NSWindowController {
 
     @IBOutlet weak var mainIcon: NSImageView!
-    @IBOutlet weak var serviceName: NSTextField!
-    @IBOutlet weak var prNumber: NSTextField!
+    @IBOutlet weak var prInfo: NSTextField!
     @IBOutlet weak var statusIcon: NSImageView!
     
     override func windowDidLoad() {
@@ -21,10 +20,8 @@ class WindowController: NSWindowController {
     }
     
     func updateStatus(pRBuild: PRInstance) {
-        serviceName.font = .systemFont(ofSize: 22)
-        prNumber.font = .systemFont(ofSize: 22)
-        serviceName.stringValue = pRBuild.serviceName
-        prNumber.stringValue = "PR#" + pRBuild.prNumber
+        prInfo.font = .systemFont(ofSize: 12)
+        prInfo.stringValue = pRBuild.serviceName + "\nPR#" + pRBuild.prNumber
         if (pRBuild.status == "PENDING") {
             statusIcon.image = NSImage(named: "BuildJenkins@2x.png")
         }
