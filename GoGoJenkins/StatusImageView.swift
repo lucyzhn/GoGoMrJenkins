@@ -11,8 +11,8 @@ class StatusImageView: NSImageView {
 
     override func draw(_ dirtyRect: NSRect) {
         super.draw(dirtyRect)
-
-        self.image = NSImage(named: "transparentJenkins@2x.png")
+        
+        self.image = NSImage(named: "Pickaxe@2x.png")
     }
     
 }
