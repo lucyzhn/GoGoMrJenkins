@@ -703,8 +703,13 @@
                                     <view key="view" translatesAutoresizingMaskIntoConstraints="NO" id="dbB-7q-oLB">
                                         <rect key="frame" x="0.0" y="0.0" width="685" height="30"/>
                                         <subviews>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="M3n-2F-mly" customClass="IconImageView" customModule="GoGoJenkins" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="-9" width="48" height="48"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="jC4-tr-Wnk"/>
+                                            </imageView>
                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kV9-MY-w0y" customClass="StatusImageView" customModule="GoGoJenkins" customModuleProvider="target">
-                                                <rect key="frame" x="219" y="-9" width="48" height="48"/>
+                                                <rect key="frame" x="318" y="-9" width="48" height="48"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="0DM-2p-rzA"/>
                                             </imageView>

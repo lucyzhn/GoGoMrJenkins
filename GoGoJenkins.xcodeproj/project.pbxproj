@@ -13,13 +13,9 @@
 		82B0E10F27161CDD00B07CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E10D27161CDD00B07CDE /* Main.storyboard */; };
 		82B0E11927161E0D00B07CDE /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0E11827161E0D00B07CDE /* WindowController.swift */; };
 		82B0E123271645C400B07CDE /* StatusImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0E122271645C400B07CDE /* StatusImageView.swift */; };
-		82B0E14F271649DB00B07CDE /* Pickaxe.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E14E271649DB00B07CDE /* Pickaxe.png */; };
-		82B0E16427164F1E00B07CDE /* jenkins_green@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E16327164F1E00B07CDE /* jenkins_green@2x.jpg */; };
-		82B0E16C2716501000B07CDE /* jenkins_normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E16B2716501000B07CDE /* jenkins_normal@2x.png */; };
-		82B0E1722716589900B07CDE /* image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E1712716589900B07CDE /* image@2x.png */; };
-		82B0E1792716598800B07CDE /* new_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E1782716598800B07CDE /* new_image@2x.png */; };
-		82B0E17D27165ADF00B07CDE /* mrjenkins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E17C27165ADF00B07CDE /* mrjenkins@2x.png */; };
-		82B0E18027165B3800B07CDE /* transparentJenkins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E17F27165B3800B07CDE /* transparentJenkins@2x.png */; };
+		82B0E19527174CCD00B07CDE /* IconImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0E19427174CCD00B07CDE /* IconImageView.swift */; };
+		82B0E19A27174DE000B07CDE /* JenkinsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E19927174DE000B07CDE /* JenkinsIcon@2x.png */; };
+		82B0E19E27174FF000B07CDE /* Pickaxe@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E19D27174FF000B07CDE /* Pickaxe@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,13 +28,9 @@
 		82B0E11127161CDD00B07CDE /* GoGoJenkins.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoGoJenkins.entitlements; sourceTree = "<group>"; };
 		82B0E11827161E0D00B07CDE /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
 		82B0E122271645C400B07CDE /* StatusImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusImageView.swift; sourceTree = "<group>"; };
-		82B0E14E271649DB00B07CDE /* Pickaxe.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Pickaxe.png; sourceTree = "<group>"; };
-		82B0E16327164F1E00B07CDE /* jenkins_green@2x.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "jenkins_green@2x.jpg"; path = "../../../../Downloads/jenkins_green@2x.jpg"; sourceTree = "<group>"; };
-		82B0E16B2716501000B07CDE /* jenkins_normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "jenkins_normal@2x.png"; path = "../../../../Downloads/jenkins_normal@2x.png"; sourceTree = "<group>"; };
-		82B0E1712716589900B07CDE /* image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "image@2x.png"; path = "../../../../Downloads/image@2x.png"; sourceTree = "<group>"; };
-		82B0E1782716598800B07CDE /* new_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "new_image@2x.png"; path = "../../../../Downloads/new_image@2x.png"; sourceTree = "<group>"; };
-		82B0E17C27165ADF00B07CDE /* mrjenkins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "mrjenkins@2x.png"; path = "../../../../Downloads/mrjenkins@2x.png"; sourceTree = "<group>"; };
-		82B0E17F27165B3800B07CDE /* transparentJenkins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "transparentJenkins@2x.png"; path = "../../../../Downloads/transparentJenkins@2x.png"; sourceTree = "<group>"; };
+		82B0E19427174CCD00B07CDE /* IconImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImageView.swift; sourceTree = "<group>"; };
+		82B0E19927174DE000B07CDE /* JenkinsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JenkinsIcon@2x.png"; sourceTree = "<group>"; };
+		82B0E19D27174FF000B07CDE /* Pickaxe@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Pickaxe@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,16 +68,12 @@
 				82B0E10B27161CDD00B07CDE /* Assets.xcassets */,
 				82B0E10D27161CDD00B07CDE /* Main.storyboard */,
 				82B0E11027161CDD00B07CDE /* Info.plist */,
-				82B0E14E271649DB00B07CDE /* Pickaxe.png */,
-				82B0E1782716598800B07CDE /* new_image@2x.png */,
-				82B0E1712716589900B07CDE /* image@2x.png */,
-				82B0E16B2716501000B07CDE /* jenkins_normal@2x.png */,
-				82B0E16327164F1E00B07CDE /* jenkins_green@2x.jpg */,
-				82B0E17C27165ADF00B07CDE /* mrjenkins@2x.png */,
+				82B0E19927174DE000B07CDE /* JenkinsIcon@2x.png */,
 				82B0E11127161CDD00B07CDE /* GoGoJenkins.entitlements */,
-				82B0E17F27165B3800B07CDE /* transparentJenkins@2x.png */,
 				82B0E11827161E0D00B07CDE /* WindowController.swift */,
+				82B0E19D27174FF000B07CDE /* Pickaxe@2x.png */,
 				82B0E122271645C400B07CDE /* StatusImageView.swift */,
+				82B0E19427174CCD00B07CDE /* IconImageView.swift */,
 			);
 			path = GoGoJenkins;
 			sourceTree = "<group>";
@@ -147,15 +135,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				82B0E1722716589900B07CDE /* image@2x.png in Resources */,
-				82B0E1792716598800B07CDE /* new_image@2x.png in Resources */,
+				82B0E19E27174FF000B07CDE /* Pickaxe@2x.png in Resources */,
 				82B0E10C27161CDD00B07CDE /* Assets.xcassets in Resources */,
 				82B0E10F27161CDD00B07CDE /* Main.storyboard in Resources */,
-				82B0E16C2716501000B07CDE /* jenkins_normal@2x.png in Resources */,
-				82B0E14F271649DB00B07CDE /* Pickaxe.png in Resources */,
-				82B0E17D27165ADF00B07CDE /* mrjenkins@2x.png in Resources */,
-				82B0E16427164F1E00B07CDE /* jenkins_green@2x.jpg in Resources */,
-				82B0E18027165B3800B07CDE /* transparentJenkins@2x.png in Resources */,
+				82B0E19A27174DE000B07CDE /* JenkinsIcon@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				82B0E10A27161CD700B07CDE /* ViewController.swift in Sources */,
+				82B0E19527174CCD00B07CDE /* IconImageView.swift in Sources */,
 				82B0E11927161E0D00B07CDE /* WindowController.swift in Sources */,
 				82B0E123271645C400B07CDE /* StatusImageView.swift in Sources */,
 				82B0E10827161CD700B07CDE /* AppDelegate.swift in Sources */,
