@@ -16,11 +16,11 @@
 		82B0E1A527175F3A00B07CDE /* FailedJenkins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E1A427175F3A00B07CDE /* FailedJenkins@2x.png */; };
 		82B0E1AB2717633900B07CDE /* SuccessJenkins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E1AA2717633900B07CDE /* SuccessJenkins@2x.png */; };
 		82B0E1AF271768CB00B07CDE /* PRInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0E1AE271768CB00B07CDE /* PRInstance.swift */; };
-		C8C651B42717D92F0075F55A /* GoGoMrJenkins-1.0.jar in Resources */ = {isa = PBXBuildFile; fileRef = C8C651B32717D92F0075F55A /* GoGoMrJenkins-1.0.jar */; };
 		C8C651B72717EE400075F55A /* BuildJenkinsUp.png in Resources */ = {isa = PBXBuildFile; fileRef = C8C651B52717EE400075F55A /* BuildJenkinsUp.png */; };
 		C8C651B82717EE400075F55A /* BuildJenkinsDown.png in Resources */ = {isa = PBXBuildFile; fileRef = C8C651B62717EE400075F55A /* BuildJenkinsDown.png */; };
 		C8C651BC2718064C0075F55A /* Loading1.png in Resources */ = {isa = PBXBuildFile; fileRef = C8C651BB2718064C0075F55A /* Loading1.png */; };
 		C8C651BE271807350075F55A /* Loading2.png in Resources */ = {isa = PBXBuildFile; fileRef = C8C651BD271807350075F55A /* Loading2.png */; };
+		C8C651C527187A9E0075F55A /* GoGoMrJenkins-1.0.jar in Resources */ = {isa = PBXBuildFile; fileRef = C8C651C427187A9E0075F55A /* GoGoMrJenkins-1.0.jar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,11 +36,11 @@
 		82B0E1A427175F3A00B07CDE /* FailedJenkins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FailedJenkins@2x.png"; sourceTree = "<group>"; };
 		82B0E1AA2717633900B07CDE /* SuccessJenkins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SuccessJenkins@2x.png"; sourceTree = "<group>"; };
 		82B0E1AE271768CB00B07CDE /* PRInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRInstance.swift; sourceTree = "<group>"; };
-		C8C651B32717D92F0075F55A /* GoGoMrJenkins-1.0.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = "GoGoMrJenkins-1.0.jar"; path = "../../GoGoMrJenkins/build/libs/GoGoMrJenkins-1.0.jar"; sourceTree = "<group>"; };
 		C8C651B52717EE400075F55A /* BuildJenkinsUp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BuildJenkinsUp.png; sourceTree = "<group>"; };
 		C8C651B62717EE400075F55A /* BuildJenkinsDown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = BuildJenkinsDown.png; sourceTree = "<group>"; };
 		C8C651BB2718064C0075F55A /* Loading1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loading1.png; sourceTree = "<group>"; };
-		C8C651BD271807350075F55A /* Loading2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Loading2.png; path = GoGoJenkins/Loading2.png; sourceTree = "<group>"; };
+		C8C651BD271807350075F55A /* Loading2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Loading2.png; sourceTree = "<group>"; };
+		C8C651C427187A9E0075F55A /* GoGoMrJenkins-1.0.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "GoGoMrJenkins-1.0.jar"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +57,7 @@
 		82B0E0FB27161CD700B07CDE = {
 			isa = PBXGroup;
 			children = (
-				C8C651BD271807350075F55A /* Loading2.png */,
-				C8C651B32717D92F0075F55A /* GoGoMrJenkins-1.0.jar */,
+				C8C651C427187A9E0075F55A /* GoGoMrJenkins-1.0.jar */,
 				82B0E10627161CD700B07CDE /* GoGoJenkins */,
 				82B0E10527161CD700B07CDE /* Products */,
 			);
@@ -75,6 +74,7 @@
 		82B0E10627161CD700B07CDE /* GoGoJenkins */ = {
 			isa = PBXGroup;
 			children = (
+				C8C651BD271807350075F55A /* Loading2.png */,
 				C8C651BB2718064C0075F55A /* Loading1.png */,
 				C8C651B52717EE400075F55A /* BuildJenkinsUp.png */,
 				C8C651B62717EE400075F55A /* BuildJenkinsDown.png */,
@@ -150,11 +150,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8C651C527187A9E0075F55A /* GoGoMrJenkins-1.0.jar in Resources */,
 				C8C651BE271807350075F55A /* Loading2.png in Resources */,
 				C8C651BC2718064C0075F55A /* Loading1.png in Resources */,
 				C8C651B72717EE400075F55A /* BuildJenkinsUp.png in Resources */,
 				C8C651B82717EE400075F55A /* BuildJenkinsDown.png in Resources */,
-				C8C651B42717D92F0075F55A /* GoGoMrJenkins-1.0.jar in Resources */,
 				82B0E1A527175F3A00B07CDE /* FailedJenkins@2x.png in Resources */,
 				82B0E10C27161CDD00B07CDE /* Assets.xcassets in Resources */,
 				82B0E10F27161CDD00B07CDE /* Main.storyboard in Resources */,
