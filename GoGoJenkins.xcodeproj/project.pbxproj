@@ -19,7 +19,7 @@
 		82B0E1AB2717633900B07CDE /* SuccessJenkins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E1AA2717633900B07CDE /* SuccessJenkins@2x.png */; };
 		82B0E1AF271768CB00B07CDE /* PRInstance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0E1AE271768CB00B07CDE /* PRInstance.swift */; };
 		C8C651AE2717A46D0075F55A /* BuildJenkins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = C8C651AD2717A46D0075F55A /* BuildJenkins@2x.png */; };
-		C8C651B22717A63A0075F55A /* GoGoMrJenkins-1.0.jar in Resources */ = {isa = PBXBuildFile; fileRef = C8C651B12717A63A0075F55A /* GoGoMrJenkins-1.0.jar */; };
+		C8C651B42717D92F0075F55A /* GoGoMrJenkins-1.0.jar in Resources */ = {isa = PBXBuildFile; fileRef = C8C651B32717D92F0075F55A /* GoGoMrJenkins-1.0.jar */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +38,7 @@
 		82B0E1AA2717633900B07CDE /* SuccessJenkins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SuccessJenkins@2x.png"; sourceTree = "<group>"; };
 		82B0E1AE271768CB00B07CDE /* PRInstance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PRInstance.swift; sourceTree = "<group>"; };
 		C8C651AD2717A46D0075F55A /* BuildJenkins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "BuildJenkins@2x.png"; sourceTree = "<group>"; };
-		C8C651B12717A63A0075F55A /* GoGoMrJenkins-1.0.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; path = "GoGoMrJenkins-1.0.jar"; sourceTree = "<group>"; };
+		C8C651B32717D92F0075F55A /* GoGoMrJenkins-1.0.jar */ = {isa = PBXFileReference; lastKnownFileType = archive.jar; name = "GoGoMrJenkins-1.0.jar"; path = "../../GoGoMrJenkins/build/libs/GoGoMrJenkins-1.0.jar"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +55,7 @@
 		82B0E0FB27161CD700B07CDE = {
 			isa = PBXGroup;
 			children = (
-				C8C651B12717A63A0075F55A /* GoGoMrJenkins-1.0.jar */,
+				C8C651B32717D92F0075F55A /* GoGoMrJenkins-1.0.jar */,
 				82B0E10627161CD700B07CDE /* GoGoJenkins */,
 				82B0E10527161CD700B07CDE /* Products */,
 			);
@@ -147,7 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C8C651B22717A63A0075F55A /* GoGoMrJenkins-1.0.jar in Resources */,
+				C8C651B42717D92F0075F55A /* GoGoMrJenkins-1.0.jar in Resources */,
 				82B0E1A527175F3A00B07CDE /* FailedJenkins@2x.png in Resources */,
 				82B0E10C27161CDD00B07CDE /* Assets.xcassets in Resources */,
 				C8C651AE2717A46D0075F55A /* BuildJenkins@2x.png in Resources */,
@@ -310,7 +310,7 @@
 				CODE_SIGN_ENTITLEMENTS = GoGoJenkins/GoGoJenkins.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7N9YCAC2JJ;
+				DEVELOPMENT_TEAM = 5T7B6ZZ49C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = GoGoJenkins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -331,7 +331,7 @@
 				CODE_SIGN_ENTITLEMENTS = GoGoJenkins/GoGoJenkins.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = 7N9YCAC2JJ;
+				DEVELOPMENT_TEAM = 5T7B6ZZ49C;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = GoGoJenkins/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

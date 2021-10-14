@@ -6,14 +6,15 @@
 //
 
 import Cocoa
+import Foundation
 
 class ViewController: NSViewController {
 
     override func viewWillAppear() {
         DispatchQueue.global(qos: .userInitiated).async {
-            self.runCommand()
+            let buildStatus = self.getBuildStatus()
+            print(buildStatus)
         }
-        //runCommand(cmd: "/usr/bin/java", args: "--help")
     }
     
     override func viewDidLoad() {
@@ -35,17 +36,25 @@ class ViewController: NSViewController {
         wc.updateStatus(pRBuild: pr)
     }
     
-    func runCommand() {
+//    func getGitApiToken(){
+//        runCommand(cmd:"/usr/bin/env", args: ["zsh", "-c", "-i","-l","/usr/bin/env"])
+//    }
+//
+    
+    func getBuildStatus(){
         let bundle = Bundle.main
         let path = bundle.path(forResource: "GoGoMrJenkins-1.0", ofType: "jar")!
+        runCommand(cmd: "/usr/bin/java", args: ["-jar", path, "", "check-build"])
+    }
+    
+    func runCommand(cmd:String, args:[String])-> [String] {
         
         var output : [String] = []
-//        var error : [String] = []
-
+        var error : [String] = []
         let task = Process()
         
-        task.launchPath = "/usr/bin/java"
-        task.arguments = ["-jar", path, "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", "check-build"]
+        task.launchPath = cmd
+        task.arguments = args
         
         let outpipe = Pipe()
         task.standardOutput = outpipe
@@ -59,18 +68,19 @@ class ViewController: NSViewController {
             string = string.trimmingCharacters(in: .newlines)
             output = string.components(separatedBy: "\n")
         }
+        let errdata = errpipe.fileHandleForReading.readDataToEndOfFile()
+        if var string = String(data: errdata, encoding: .utf8) {
+            string = string.trimmingCharacters(in: .newlines)
+            error = string.components(separatedBy: "\n")
+        }
 
-//        let errdata = errpipe.fileHandleForReading.readDataToEndOfFile()
-//        if var string = String(data: errdata, encoding: .utf8) {
-//            string = string.trimmingCharacters(in: .newlines)
-//            error = string.components(separatedBy: "\n")
-//        }
 
         task.waitUntilExit()
         let status = task.terminationStatus
-
-        print(output)
+//        print(output, error, status)
+        return output
     }
+    
     
 }
 
