@@ -9,11 +9,20 @@ import Cocoa
 import Foundation
 
 class ViewController: NSViewController {
+    var listOfPRInstances = [] as [PRInstance]
 
     override func viewWillAppear() {
         DispatchQueue.global(qos: .userInitiated).async {
-            let buildStatus = self.getBuildStatus()
-            print(buildStatus)
+            while(true){
+                self.getBuildStatus()
+                sleep(30)
+            }
+        }
+        DispatchQueue.global(qos: .userInitiated).async {
+            while(true){
+                self.reRenderPrIcons()
+                sleep(1)
+            }
         }
     }
     
@@ -35,24 +44,19 @@ class ViewController: NSViewController {
     }
 
     @IBAction func start(_ sender: Any) {
-        
-        let wc : WindowController = self.view.window?.windowController as! WindowController
-        
-        let listOfPRInstances = [
-            PRInstance(serviceName: "reservations-service", prNumber: "202", status: "SUCCESS", buildURL: "www.jenkins.com"),
-            PRInstance(serviceName: "inventory-service", prNumber: "105", status: "FAILED", buildURL: "www.jenkins.com"),
-            PRInstance(serviceName: "bespoke-proxy-service", prNumber: "928", status: "PENDING", buildURL: "www.jenkins.com")
-        ]
+        print("hello world")
+    }
+    
+    func reRenderPrIcons(){
         var side = "LEFT"
-        DispatchQueue.global(qos: .default).async{
-            for prInstance in listOfPRInstances {
-                DispatchQueue.main.async {
-                    wc.updateStatus(pRBuild: prInstance, side: side)
-                   side = side == "LEFT" ? "RIGHT" : "LEFT"
-                 }
-                sleep(10)
-            }
+        for prInstance in self.listOfPRInstances {
+            DispatchQueue.main.async {
+                let wc : WindowController = self.view.window?.windowController as! WindowController
+                wc.updateStatus(pRBuild: prInstance, side: side)
+                side = side == "LEFT" ? "RIGHT" : "LEFT"
+             }
         }
+        print("ReRendering...")
     }
     
 //    func getGitApiToken(){
@@ -63,7 +67,17 @@ class ViewController: NSViewController {
     func getBuildStatus(){
         let bundle = Bundle.main
         let path = bundle.path(forResource: "GoGoMrJenkins-1.0", ofType: "jar")!
-        runCommand(cmd: "/usr/bin/java", args: ["-jar", path, "", "check-build"])
+        let builds = runCommand(cmd: "/usr/bin/java", args: ["-jar", path, "", "check-build"])
+        
+        var newPRList = [] as [PRInstance]
+        for build in builds{
+            let pr = build.split(separator: "|")
+            print(pr)
+            if(pr.count<=3) {continue}
+            let prInstance = PRInstance(serviceName: String(pr[0]), prNumber: String(pr[1]), status: String(pr[2]), buildURL: String(pr[3]))
+            newPRList.append(prInstance)
+        }
+        self.listOfPRInstances = newPRList
     }
     
     func runCommand(cmd:String, args:[String])-> [String] {
