@@ -28,12 +28,31 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
+    
+    func delay(_ delay:Double, closure:@escaping ()->()) {
+        DispatchQueue.main.asyncAfter(
+            deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
+    }
 
     @IBAction func start(_ sender: Any) {
         
         let wc : WindowController = self.view.window?.windowController as! WindowController
-        let pr = PRInstance(serviceName: "reservations-service", prNumber: "202", status: "SUCCESS", buildURL: "www.jenkins.com")
-        wc.updateStatus(pRBuild: pr)
+        
+        let listOfPRInstances = [
+            PRInstance(serviceName: "reservations-service", prNumber: "202", status: "SUCCESS", buildURL: "www.jenkins.com"),
+            PRInstance(serviceName: "inventory-service", prNumber: "105", status: "FAILED", buildURL: "www.jenkins.com"),
+            PRInstance(serviceName: "bespoke-proxy-service", prNumber: "928", status: "PENDING", buildURL: "www.jenkins.com")
+        ]
+        var side = "LEFT"
+        DispatchQueue.global(qos: .default).async{
+            for prInstance in listOfPRInstances {
+                DispatchQueue.main.async {
+                    wc.updateStatus(pRBuild: prInstance, side: side)
+                   side = side == "LEFT" ? "RIGHT" : "LEFT"
+                 }
+                sleep(10)
+            }
+        }
     }
     
 //    func getGitApiToken(){

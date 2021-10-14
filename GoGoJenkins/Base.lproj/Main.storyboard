@@ -709,7 +709,7 @@
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="jC4-tr-Wnk"/>
                                             </imageView>
                                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" id="db0-G2-7K2">
-                                                <rect key="frame" x="57" y="-1" width="140" height="34"/>
+                                                <rect key="frame" x="107" y="-1" width="160" height="34"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <textFieldCell key="cell" refusesFirstResponder="YES" borderStyle="bezel" alignment="center" drawsBackground="YES" id="fzI-tH-gtS">
                                                     <font key="font" metaFont="system"/>
@@ -718,12 +718,26 @@
                                                 </textFieldCell>
                                             </textField>
                                             <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kV9-MY-w0y" userLabel="Status Icon">
-                                                <rect key="frame" x="193" y="0.0" width="48" height="30"/>
+                                                <rect key="frame" x="263" y="0.0" width="48" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                                 <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="0DM-2p-rzA"/>
                                                 <connections>
                                                     <action selector="iamge:" target="B8D-0N-5wS" id="KkK-85-RJn"/>
                                                 </connections>
+                                            </imageView>
+                                            <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mb7-U1-orm" userLabel="Pr Info 2">
+                                                <rect key="frame" x="405" y="-1" width="160" height="34"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <textFieldCell key="cell" lineBreakMode="clipping" borderStyle="bezel" alignment="center" drawsBackground="YES" id="VwC-PJ-JBH">
+                                                    <font key="font" metaFont="system"/>
+                                                    <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                                    <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                </textFieldCell>
+                                            </textField>
+                                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TT8-Tj-evy">
+                                                <rect key="frame" x="561" y="1" width="48" height="30"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="7JY-n4-EM9"/>
                                             </imageView>
                                         </subviews>
                                     </view>
@@ -737,9 +751,11 @@
                         <outlet property="image" destination="kV9-MY-w0y" id="fNh-J8-J5n"/>
                         <outlet property="img" destination="kV9-MY-w0y" id="jg1-qA-vOa"/>
                         <outlet property="mainIcon" destination="M3n-2F-mly" id="2PC-XK-dHi"/>
-                        <outlet property="prInfo" destination="db0-G2-7K2" id="DgS-tm-BtR"/>
+                        <outlet property="prInfo1" destination="db0-G2-7K2" id="DgS-tm-BtR"/>
+                        <outlet property="prInfo2" destination="mb7-U1-orm" id="hI5-8d-ZvD"/>
                         <outlet property="serviceName" destination="db0-G2-7K2" id="4Ci-YL-XTb"/>
-                        <outlet property="statusIcon" destination="kV9-MY-w0y" id="IIg-iB-jpc"/>
+                        <outlet property="statusIcon1" destination="kV9-MY-w0y" id="IIg-iB-jpc"/>
+                        <outlet property="statusIcon2" destination="TT8-Tj-evy" id="9Iv-qZ-PJ5"/>
                         <outlet property="statusImage" destination="0DM-2p-rzA" id="joZ-I3-N4k"/>
                         <outlet property="touchBar" destination="H2X-1j-clE" id="jjI-MC-Nmn"/>
                         <segue destination="XfG-lQ-9wD" kind="relationship" relationship="window.shadowedContentViewController" id="cq2-FE-JQM"/>

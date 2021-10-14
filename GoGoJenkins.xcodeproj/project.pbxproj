@@ -12,8 +12,6 @@
 		82B0E10C27161CDD00B07CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E10B27161CDD00B07CDE /* Assets.xcassets */; };
 		82B0E10F27161CDD00B07CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E10D27161CDD00B07CDE /* Main.storyboard */; };
 		82B0E11927161E0D00B07CDE /* WindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0E11827161E0D00B07CDE /* WindowController.swift */; };
-		82B0E123271645C400B07CDE /* StatusImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0E122271645C400B07CDE /* StatusImageView.swift */; };
-		82B0E19527174CCD00B07CDE /* IconImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82B0E19427174CCD00B07CDE /* IconImageView.swift */; };
 		82B0E19A27174DE000B07CDE /* JenkinsIcon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E19927174DE000B07CDE /* JenkinsIcon@2x.png */; };
 		82B0E1A527175F3A00B07CDE /* FailedJenkins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E1A427175F3A00B07CDE /* FailedJenkins@2x.png */; };
 		82B0E1AB2717633900B07CDE /* SuccessJenkins@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 82B0E1AA2717633900B07CDE /* SuccessJenkins@2x.png */; };
@@ -31,8 +29,6 @@
 		82B0E11027161CDD00B07CDE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		82B0E11127161CDD00B07CDE /* GoGoJenkins.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GoGoJenkins.entitlements; sourceTree = "<group>"; };
 		82B0E11827161E0D00B07CDE /* WindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowController.swift; sourceTree = "<group>"; };
-		82B0E122271645C400B07CDE /* StatusImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusImageView.swift; sourceTree = "<group>"; };
-		82B0E19427174CCD00B07CDE /* IconImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IconImageView.swift; sourceTree = "<group>"; };
 		82B0E19927174DE000B07CDE /* JenkinsIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "JenkinsIcon@2x.png"; sourceTree = "<group>"; };
 		82B0E1A427175F3A00B07CDE /* FailedJenkins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "FailedJenkins@2x.png"; sourceTree = "<group>"; };
 		82B0E1AA2717633900B07CDE /* SuccessJenkins@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "SuccessJenkins@2x.png"; sourceTree = "<group>"; };
@@ -84,8 +80,6 @@
 				82B0E11827161E0D00B07CDE /* WindowController.swift */,
 				C8C651AD2717A46D0075F55A /* BuildJenkins@2x.png */,
 				82B0E1AA2717633900B07CDE /* SuccessJenkins@2x.png */,
-				82B0E122271645C400B07CDE /* StatusImageView.swift */,
-				82B0E19427174CCD00B07CDE /* IconImageView.swift */,
 			);
 			path = GoGoJenkins;
 			sourceTree = "<group>";
@@ -165,10 +159,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				82B0E10A27161CD700B07CDE /* ViewController.swift in Sources */,
-				82B0E19527174CCD00B07CDE /* IconImageView.swift in Sources */,
 				82B0E1AF271768CB00B07CDE /* PRInstance.swift in Sources */,
 				82B0E11927161E0D00B07CDE /* WindowController.swift in Sources */,
-				82B0E123271645C400B07CDE /* StatusImageView.swift in Sources */,
 				82B0E10827161CD700B07CDE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
